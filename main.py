@@ -35,3 +35,30 @@ except Exception as e:
 # print_stars(4) => print_stars(4 - 1) => N = 3
 # print_stars(3) => print_stars(3 - 1) => N = 2
 # print_stars(2) => print_stars(2 - 1) => N = 1
+
+
+# сума чисел в діапазоні
+def sum_num(a, b):
+    if a > b:
+        return 0
+    else:
+        return a + sum_num(a + 1, b)
+
+
+try:
+    a1 = int(input("Enter a: "))
+    b1 = int(input("Enter b: "))
+    result = sum_num(a1, b1)
+    print(f"Sum_num {result}")
+except ValueError:
+    print("Enter only numbers please!")
+except Exception as e:
+    print(f"Error: {e}")
+
+
+# a1 = 2
+# b1 = 5
+# sum_num(2, 5) => sum_num(2 + 1, 5) => 14
+# sum_num(3, 5) => sum_num(3 + 1, 5) => 12
+# sum_num(4, 5) => sum_num(4 + 1, 5) => 9
+# sum_num(5, 5) => 5

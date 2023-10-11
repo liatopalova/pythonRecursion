@@ -17,9 +17,11 @@ def get_num_pow(number, degree):
 
 # зірки в ряд
 def print_stars(n):
-    if n != 0:
+    if n > 0:
         print("*", end="")
         print_stars(n - 1)
+    else:
+        print("Number < 1!")
 
 
 # N = 5

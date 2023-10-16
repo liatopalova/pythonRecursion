@@ -1,4 +1,4 @@
-print("1. Number degree/n2. Stars/n3. Range numbers")
+print("1. Number degree\n2. Stars\n3. Range numbers")
 user_select = int(input("Enter menu item: "))
 # ступінь числа
 
